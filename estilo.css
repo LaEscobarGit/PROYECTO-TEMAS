@@ -1,0 +1,78 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body{
+    font-family: 'Sansation';
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Titulos*/
+h1{
+    font-size: 170px;
+}
+h2{
+    font-size: 120px;
+}
+h3{
+    font-size: 100px;
+    color: #505050;
+}
+h4{
+    font-family: 'Roboto';
+    font-size: 64px;
+    color: #BDBDBD;
+    font-weight: lighter;
+}
+
+/*Barra Nav*/
+header{
+    padding: 5px;
+    width: 100%;
+    z-index: 4;
+    position: fixed;
+    background-color: blue;
+    margin: 0;
+    top: 0;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    margin: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    color: black;
+    font-family: 'Roboto';
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(79, 79, 79);
+}
+nav img{
+    height: 30px;
+}
+
+/*Footer*/
+footer{
+    background-color: #2C2C2C;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: normal;
+}
