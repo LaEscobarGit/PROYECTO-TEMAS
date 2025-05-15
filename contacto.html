@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" type="text/css" href="contacto.css">
         <title>Daltonismo en Colores</title>
     </head>
     <body>
@@ -22,8 +23,20 @@
                 </ul>
                 <ul>
                     <li><a href="inicio.html">INICIO</a></li>
-                    <li><a href="sobre.html">QUÉ ES</a></li>
-                    <li><a href="tipos.html">TIPOS</a></li>
+                    <li id="sobre"><a href="sobre.html">QUÉ ES</a>
+                        <ul id="dropS">
+                            <li><a href="causas.html">Causas</a></li>
+                            <li><a href="diagnostico.html">Diagnóstico</a></li>
+                        </ul>
+                    </li>
+                    <li id="tipos"><a href="tipos.html">TIPOS</a>
+                        <ul id="dropT">
+                            <li><a href="protanopia.html">Protanopia</a></li>
+                            <li><a href="deuteranopia.html">Deuteranopia</a></li>
+                            <li><a href="tritanopia.html">Tritanopia</a></li>
+                            <li><a href="monocromatopsia.html">Monocromatismo</a></li>
+                        </ul>
+                    </li>
                     <li><a href="simulaciones.html">SIMULACIONES</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
@@ -80,5 +93,6 @@
             </table>
             <p class="derechos">© 2025 Derechos Reservados</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
