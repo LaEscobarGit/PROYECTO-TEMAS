@@ -34,9 +34,7 @@
 
     <main class="contenido">
         <section class="subtitulo">
-            <h3>
-                Simulaciones
-            </h3>
+            <h3>Simulaciones</h3>
         </section>
 
         <section class="seccion">
@@ -46,47 +44,47 @@
                 es que estas personas viven su día a día.
             </p>
         </section>
-        <div class="seccion">
-        <div class="rectangulo" id="grupitos">
-            <div id="original" class="grupo-img visible">
-                <img src="./imagenes/banderareal.jpg" alt="Original 1" loading="lazy">
-                <img src="./imagenes/bosquereal.png" alt="Original 2" loading="lazy">
-                <img src="./imagenes/semafororeal.jpg" alt="Original 3" loading="lazy">
-            </div>
-
-            <div id="protanopia" class="grupo-img">
-                <img src="./imagenes/protasimula.png" alt="Protanopía 1" loading="lazy">
-                <img src="./imagenes/protasimula2.png" alt="Protanopía 2" loading="lazy">
-                <img src="./imagenes/protasimula3.png" alt="Protanopía 3" loading="lazy">
-            </div>
-
-            <div id="deuteranopia" class="grupo-img">
-                <img src="./imagenes/deuteransimula.png" alt="Deuteranopía 1" loading="lazy">
-                <img src="./imagenes/Deuteransimula2.png" alt="Deuteranopía 2" loading="lazy">
-                <img src="./imagenes/Deuteransimula3.png" alt="Deuteranopía 3" loading="lazy">
-            </div>
-
-            <div id="tritanopia" class="grupo-img">
-                <img src="./imagenes/tritasimula.png" alt="Tritanopía 1" loading="lazy">
-                <img src="./imagenes/Tritasimula2.png" alt="Tritanopía 2" loading="lazy">
-                <img src="./imagenes/tritasimula3.png" alt="Tritanopía 3" loading="lazy">
-            </div>
-
-            <div id="monocromatismo" class="grupo-img">
-                <img src="./imagenes/Monosimula.png" alt="Monocromatismo 1" loading="lazy">
-                <img src="./imagenes/monosimula2.png" alt="Monocromatismo 2" loading="lazy">
-                <img src="./imagenes/monosimula3.png" alt="Monocromatismo 3" loading="lazy">
-            </div>
         
+        <div class="seccion">
+            <div class="rectangulo" id="grupitos">
+                <div id="original" class="grupo-img visible">
+                    <img src="./imagenes/pato.jpg" alt="Original 1" loading="lazy">
+                    <img src="./imagenes/prado.jpg" alt="Original 2" loading="lazy">
+                    <img src="./imagenes/bosquemuyverde.jpg" alt="Original 3" loading="lazy">
+                </div>
 
-        <div style="margin-top: 20px;">
-            <button onclick="mostrarFiltro('original')">Original</button>
-            <button onclick="mostrarFiltro('protanopia')">Protanopía</button>
-            <button onclick="mostrarFiltro('deuteranopia')">Deuteranopía</button>
-            <button onclick="mostrarFiltro('tritanopia')">Tritanopía</button>
-            <button onclick="mostrarFiltro('monocromatismo')">Monocromatismo</button>
-        </div>
-        </div>
+                <div id="protanopia" class="grupo-img">
+                    <img src="./imagenes/patinprotano.png" alt="Protanopía 1" loading="lazy">
+                    <img src="./imagenes/pradoprotanope.png" alt="Protanopía 2" loading="lazy">
+                    <img src="./imagenes/protasimula3.png" alt="Protanopía 3" loading="lazy">
+                </div>
+
+                <div id="deuteranopia" class="grupo-img">
+                    <img src="./imagenes/patindeuterano.png" alt="Deuteranopía 1" loading="lazy">
+                    <img src="./imagenes/pradodeuterano.png" alt="Deuteranopía 2" loading="lazy">
+                    <img src="./imagenes/deuteranosimula3.png" alt="Deuteranopía 3" loading="lazy">
+                </div>
+
+                <div id="tritanopia" class="grupo-img">
+                    <img src="./imagenes/patintripano.png" alt="Tritanopía 1" loading="lazy">
+                    <img src="./imagenes/pradotripanope.png" alt="Tritanopía 2" loading="lazy">
+                    <img src="./imagenes/tritasimula3.png" alt="Tritanopía 3" loading="lazy">
+                </div>
+
+                <div id="monocromatismo" class="grupo-img">
+                    <img src="./imagenes/patinmonogamo.png" alt="Monocromatismo 1" loading="lazy">
+                    <img src="./imagenes/padrocarecentedeamor.png" alt="Monocromatismo 2" loading="lazy">
+                    <img src="./imagenes/monosimula3.png" alt="Monocromatismo 3" loading="lazy">
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <button onclick="mostrarFiltro('original')">Original</button>
+                    <button onclick="mostrarFiltro('protanopia')">Protanopía</button>
+                    <button onclick="mostrarFiltro('deuteranopia')">Deuteranopía</button>
+                    <button onclick="mostrarFiltro('tritanopia')">Tritanopía</button>
+                    <button onclick="mostrarFiltro('monocromatismo')">Monocromatismo</button>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -132,13 +130,13 @@
     <script src="script.js"></script>
     <script>
         function mostrarFiltro(filtroId) {
-            const grupos = document.querySelectorAll('.grupo-img');
-            grupos.forEach(grupo => grupo.classList.remove('visible'));
-            const seleccionado = document.getElementById(filtroId);
-            if (seleccionado) {
-                seleccionado.classList.add('visible');
-            }
-        }
+    const grupos = document.querySelectorAll('.grupo-img');
+    grupos.forEach(grupo => grupo.classList.remove('visible'));
+    const seleccionado = document.getElementById(filtroId);
+    if (seleccionado) {
+        seleccionado.classList.add('visible');
+    }
+}
     </script>
 </body>
 </html>
