@@ -22,3 +22,17 @@ tr{
 #rectangulotipos{
     text-align: left;
 }
+
+.grupo-img {
+  display: none;
+}
+
+.grupo-img.visible {
+  display: flex;
+  gap: 10px;
+}
+
+#grupitos img {
+  width: 200px;
+  height: auto;
+}

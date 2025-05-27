@@ -1,70 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="generator" content="Visual Studio Code"/>
-        <meta name="Autor" content="José Álvaro Aguirre Grajeda y Natalia Escobar Hernández"/> 
-        <meta name="keywords" content="html, javascript, css">
-        <meta name="description" content="Página inicial, curso HTML, UABC"/>
-        <!--Fuentes-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="author" content="José Álvaro Aguirre Grajeda y Natalia Escobar Hernández" />
+    <meta name="keywords" content="html, javascript, css" />
+    <meta name="description" content="Página inicial, curso HTML, UABC" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sansation:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Daltonismo en Colores</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="imagenes/cima.png" alt="Logo CIMA" /></li>
+            </ul>
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="sobre.html">QUÉ ES</a></li>
+                <li><a href="tipos.html">TIPOS</a></li>
+                <li><a href="simulaciones.html">SIMULACIONES</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <section class="subtitulo">
+            <h3>
+                Simulaciones
+            </h3>
+        </section>
+
+        <section class="seccion">
+            <p style="padding-right: 100px;">
+                ¿Alguna vez te has preguntado a qué problemas se enfrenta la gente que padece de esta afección?
+                Te invitamos a que des un recorrido por nuestra sección de simulaciones y puedas <strong>comprender</strong> cómo 
+                es que estas personas viven su día a día.
+            </p>
+        </section>
+        <div class="seccion">
+        <div class="rectangulo" id="grupitos">
+            <div id="original" class="grupo-img visible">
+                <img src="./imagenes/banderareal.jpg" alt="Original 1" loading="lazy">
+                <img src="./imagenes/bosquereal.png" alt="Original 2" loading="lazy">
+                <img src="./imagenes/semafororeal.jpg" alt="Original 3" loading="lazy">
+            </div>
+
+            <div id="protanopia" class="grupo-img">
+                <img src="./imagenes/protasimula.png" alt="Protanopía 1" loading="lazy">
+                <img src="./imagenes/protasimula2.png" alt="Protanopía 2" loading="lazy">
+                <img src="./imagenes/protasimula3.png" alt="Protanopía 3" loading="lazy">
+            </div>
+
+            <div id="deuteranopia" class="grupo-img">
+                <img src="./imagenes/deuteransimula.png" alt="Deuteranopía 1" loading="lazy">
+                <img src="./imagenes/Deuteransimula2.png" alt="Deuteranopía 2" loading="lazy">
+                <img src="./imagenes/Deuteransimula3.png" alt="Deuteranopía 3" loading="lazy">
+            </div>
+
+            <div id="tritanopia" class="grupo-img">
+                <img src="./imagenes/tritasimula.png" alt="Tritanopía 1" loading="lazy">
+                <img src="./imagenes/Tritasimula2.png" alt="Tritanopía 2" loading="lazy">
+                <img src="./imagenes/tritasimula3.png" alt="Tritanopía 3" loading="lazy">
+            </div>
+
+            <div id="monocromatismo" class="grupo-img">
+                <img src="./imagenes/Monosimula.png" alt="Monocromatismo 1" loading="lazy">
+                <img src="./imagenes/monosimula2.png" alt="Monocromatismo 2" loading="lazy">
+                <img src="./imagenes/monosimula3.png" alt="Monocromatismo 3" loading="lazy">
+            </div>
         
-        <link rel="stylesheet" type="text/css" href="estilo.css">
-        <title>Daltonismo en Colores</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><img src="imagenes/cima.png"></li>
-                </ul>
-                <ul>
-                    <li><a href="inicio.html">INICIO</a></li>
-                    <li><a href="sobre.html">QUÉ ES</a></li>
-                    <li><a href="tipos.html">TIPOS</a></li>
-                    <li><a href="simulaciones.html">SIMULACIONES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="contenido">
-            
+
+        <div style="margin-top: 20px;">
+            <button onclick="mostrarFiltro('original')">Original</button>
+            <button onclick="mostrarFiltro('protanopia')">Protanopía</button>
+            <button onclick="mostrarFiltro('deuteranopia')">Deuteranopía</button>
+            <button onclick="mostrarFiltro('tritanopia')">Tritanopía</button>
+            <button onclick="mostrarFiltro('monocromatismo')">Monocromatismo</button>
         </div>
-        <footer>
-            <table>
-                <tr>
-                    <td><img src="imagenes/uabc.png"></td>
-                    <td>
-                        <ul>
-                            <li>Información</li>
-                            <li><a href="inicio.html">Inicio</a></li>
-                            <li><a href="sobre.html">Qué es</a></li>
-                            <li><a href="tipos.html">Tipos</a></li>
-                            <li><a href="simulaciones.html">Simulaciones</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Contacto</li>
-                            <li>+52 5528868472</li>
-                            <li>+52 6864207202</li>
-                            <li>j2105397@uabc.edu.mx</li>
-                            <li>natalia.escobar@uabc.edu.mx</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p>Sobre Daltonismo en Colores</p>
-                        <p>Esta página web es parte de un proyecto universitario en la materia de Temas Selectos de
-                            Sistemas Computacionales.</p>
-                        <p>Docente: Génesis Alejandra Dávalos Haro
-                            Integrantes: Aguirre Grajeda José Álvaro y Escobar Hernández Natalia.</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="derechos">© 2025 Derechos Reservados</p>
-        </footer>
-    </body>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <img src="imagenes/uabc.png" alt="Logo UABC">
+            </div>
+
+            <div class="footer-info">
+                <p><strong>Información</strong></p>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="sobre.html">Qué es</a></li>
+                    <li><a href="tipos.html">Tipos</a></li>
+                    <li><a href="simulaciones.html">Simulaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contacto">
+                <p><strong>Contacto</strong></p>
+                <ul id="cont1">
+                    <li>+55 288 68472</li>
+                    <li>+52 686 4207 202</li>
+                </ul>
+                <ul id="cont2">
+                    <li>j2105397@uabc.edu.mx</li>
+                    <li>natalia.escobar@uabc.edu.mx</li>
+                </ul>
+            </div>
+
+            <div class="footer-descripcion">
+                <strong>Sobre Daltonismo en Colores</strong>
+                <p>Esta página web es parte de un proyecto universitario en la materia de Temas Selectos de Sistemas Computacionales.</p>
+                <p><strong>Docente:</strong> Génesis Alejandra Dávalos Haro<br>
+                    <strong>Integrantes:</strong> Aguirre Grajeda José Álvaro y Escobar Hernández Natalia.</p>
+            </div>
+        </div>
+        <p class="derechos">© 2025 Derechos Reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function mostrarFiltro(filtroId) {
+            const grupos = document.querySelectorAll('.grupo-img');
+            grupos.forEach(grupo => grupo.classList.remove('visible'));
+            const seleccionado = document.getElementById(filtroId);
+            if (seleccionado) {
+                seleccionado.classList.add('visible');
+            }
+        }
+    </script>
+</body>
 </html>
